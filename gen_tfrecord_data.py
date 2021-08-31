@@ -21,6 +21,7 @@ def serialize_example(features, label):
         'features' : _bytes_feature(tf.io.serialize_tensor(features.astype(np.float32))),
         'label'     : _int64_feature(label)
     }
+    print(_int64_feature(label))
     return tf.train.Example(features=tf.train.Features(feature=feature)).SerializeToString()
 
 def gen_tfrecord_data(num_shards, label_path, data_path, dest_folder, shuffle):
