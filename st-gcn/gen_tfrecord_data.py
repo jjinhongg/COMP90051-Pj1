@@ -5,6 +5,7 @@ import numpy as np
 from tqdm import tqdm
 import tensorflow as tf
 from pathlib import Path
+# tf.enable_eager_execution()
 
 def _bytes_feature(value):
   """Returns a bytes_list from a string / byte."""
