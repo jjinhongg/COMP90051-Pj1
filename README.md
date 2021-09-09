@@ -10,8 +10,8 @@ Run main.ipynb, make sure train-data-path and test-data-path(validation) are dec
 # To Ensemble Predictions  
 Simple Voting Ensemble:   
 Sample file name format: sub_method1.csv  
-$ python kaggle_vote.py "[methods folder]/sub*.csv" "submission/kaggle_vote.csv" 
+`$ python kaggle_vote.py "[methods folder]/sub*.csv" "submission/kaggle_vote.csv" `
 
 Weighted Voting Ensemble:  
 Sample file name format according to weights: \_w3_method1.csv  
-$ python kaggle_vote.py "[methods folder]/_*.csv" "submission/kaggle_vote_weighted.csv" "weighted" 
+`$ python kaggle_vote.py "[methods folder]/_*.csv" "submission/kaggle_vote_weighted.csv" "weighted" `
