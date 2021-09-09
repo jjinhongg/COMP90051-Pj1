@@ -8,9 +8,9 @@ Navigate to st-gcn folder, run ` python3 gen_tfrecord_data.py --label-path label
 Run main.ipynb, make sure train-data-path and test-data-path(validation) are declared correctly, as well as test data path in main(), the result is saved as output.csv.
 
 # To Ensemble Predictions
-Simple Voting Ensemble:
-$ python ./src/kaggle_vote.py "./samples/method*.csv" "./samples/kaggle_vote.csv"
+Simple Voting Ensemble: 
+$ python ./src/kaggle_vote.py "./samples/method*.csv" "./samples/kaggle_vote.csv" 
 
-Weighted Voting Ensemble:
-file name according to weights: _w3_method1.csv
-$ python ./src/kaggle_vote.py "./samples/_*.csv" "./samples/kaggle_vote_weighted.csv" "weighted"
+Weighted Voting Ensemble:  
+file name according to weights: _w3_method1.csv  
+$ python ./src/kaggle_vote.py "./samples/_*.csv" "./samples/kaggle_vote_weighted.csv" "weighted" 
