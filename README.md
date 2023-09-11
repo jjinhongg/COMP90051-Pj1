@@ -1,4 +1,8 @@
-# COMP90051-Pj1
+# Skeletal based Human Action Recognition
+Implement machine learning models learning from a training set with class
+imbalance for classification of unseen skeletal action features. In each sequence, there are 16 frames.
+Each frame contains the features of human skeleton joints that can be used to model the action.
+
 # How to run
 put train.csv and test.csv in the master folder, go into st-gcn folder, run preprocess.ipynb, choose the needed cell including minmax scaler and smote strategies to run, the processed data is saved as train.npy, label.pkl for train data and test.npy, label_test.pkl for test data.
 
